@@ -2,14 +2,13 @@ const express = require("express");
 const pizza = require("../../controllers/pizza/pizzactrls");
 const burgersCtrl = require("../../controllers/burger/burgerCtrls");
 const friesCtrls = require("../../controllers/fries/friesCtrls");
+const noodlesCtrl = require("../../controllers/noodles/noodlesCtrls");
 const orderRoute = express.Router();
 
 orderRoute.get("/pizza", pizza);
 orderRoute.get("/burger", burgersCtrl);
 orderRoute.get("/fries", friesCtrls);
-orderRoute.get("/food", (req, res) => {
-  res.send("Welcome to our Pizza Ordering Service!");
-});
+orderRoute.get("/noodles", noodlesCtrl);
 orderRoute.get("/colddrinks", (req, res) => {
   res.send("Welcome to our Pizza Ordering Service!");
 });
