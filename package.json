@@ -1,0 +1,28 @@
+{
+  "name": "need-api-genrate",
+  "version": "1.0.0",
+  "description": "Provide all the required api according to user need",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShivamMathtech/API-genrator-sever-1.git"
+  },
+  "keywords": [
+    "github",
+    "server"
+  ],
+  "author": "Shivam Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShivamMathtech/API-genrator-sever-1/issues"
+  },
+  "homepage": "https://github.com/ShivamMathtech/API-genrator-sever-1#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  }
+}
