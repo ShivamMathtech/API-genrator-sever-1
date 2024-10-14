@@ -8,6 +8,8 @@ const maggiCtrls = require("../../controllers/maggiee/maggiCtrls");
 const paneerCtrls = require("../../controllers/paneer/paneerCtrls");
 const cakeCtrls = require("../../controllers/cake/cakeCtrls");
 const shakeCtrls = require("../../controllers/shakes/shakesCtrls");
+const beerCtrls = require("../../controllers/beers/beerCtrls");
+const winsCtrle = require("../../controllers/wines/winesCtrls");
 const orderRoute = express.Router();
 
 orderRoute.get("/pizza", pizza);
@@ -19,8 +21,7 @@ orderRoute.get("/maggiee", maggiCtrls);
 orderRoute.get("/paneer", paneerCtrls);
 orderRoute.get("/cakes", cakeCtrls);
 orderRoute.get("/shake", shakeCtrls);
-orderRoute.get("/chapati", (req, res) => {
-  res.send("Welcome to our Pizza Ordering Service!");
-});
+orderRoute.get("/beers", beerCtrls);
+orderRoute.get("/wines", winsCtrle);
 
 module.exports = orderRoute;
